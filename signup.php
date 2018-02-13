@@ -1,15 +1,15 @@
-<?php
-require_once "doadd.php"
-?>
 <html>
 <section class="main-container">
     <div class="main-container-overlay">
     <div class="main-wrapper">
-        <h2>Signup</h2>
+        <form action="doadd.php" method="post">
+
         <input type="text" name="first" placeholder="description">
         <input type="text" name="last" placeholder="title">
         <input type="text" name="email" placeholder="price">
-        <button type="submit" name="submit">Sign up</button>
+        <input type="submit" name="submit" value="ok">
+
+        </form>
     </div>
 
     </div>
