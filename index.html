@@ -76,12 +76,28 @@
 
   <div class="modal">
     <div class="modal_overlay"></div>
-    <div class="modal_content">
-      <p>BONSOIR</p>
-      <p>BONJOUR</p>
-      <p>COUCOU</p>
+    <div class="nav-login">
+      <form>
+        <input type="text" name="uid" placeholder="Username / e-mail" value="">
+        <input type="password" name="pwd" placeholder="password" value="">
+        <button type="submit" name="submit" placeholder="password" value="">Login</button>
+
+      </form>
+
+      <input type="text" name="nom" placeholder="Nom" value="">
+      <input type="text" name="mail" placeholder="e-mail" value="">
+      <input type="text" name="pseu" placeholder="pseudo" value="">
+      <button type="submit" name="submit" placeholder="password" value="">signup</button>
+
+
     </div>
   </div>
+<section>
+  <div class="main-wrapper">
+
+
+  </div>
+</section>
 
   <script>
     var counter = 0;
@@ -105,16 +121,16 @@
     });
 
     var btn = document.querySelector('.header-container-icons-account-img');
-        var modal = document.querySelector('.modal');
-        var overlay = document.querySelector('.modal_overlay');
+    var modal = document.querySelector('.modal');
+    var overlay = document.querySelector('.modal_overlay');
 
-        btn.addEventListener('click', function() {
-            modal.style.display = 'block';
-        });
+    btn.addEventListener('click', function() {
+      modal.style.display = 'block';
+    });
 
-        overlay.addEventListener('click', function() {
-            modal.style.display = '';
-        });
+    overlay.addEventListener('click', function() {
+      modal.style.display = '';
+    });
   </script>
 
 
