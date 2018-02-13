@@ -1,0 +1,152 @@
+@font-face {
+  font-family: 'ubunturegular';
+  src: url(../font/Ubuntu-Regular.ttf); }
+
+@font-face {
+  font-family: 'ubuntulight';
+  src: url(../font/Ubuntu-Light.ttf); }
+
+@font-face {
+  font-family: 'ubuntuMedium';
+  src: url(../font/Ubuntu-Medium.ttf); }
+
+.header-container {
+  height: 100px;
+  width: 100%;
+  justify-content: space-between;
+  display: flex; }
+  .header-container-logo {
+    height: 100vh;
+    cursor: pointer;
+    box-shadow: 0 7px 16px 2px rgba(0, 0, 0, 0.08);
+    width: 110px; }
+    .header-container-logo-back {
+      width: 110px;
+      height: 90px;
+      background-color: #ededed; }
+      .header-container-logo-back-img {
+        font-size: 20px; }
+  .header-container-icons {
+    width: 10%;
+    opacity: 0.8;
+    display: flex;
+    margin-right: 100px;
+    margin-top: 45px;
+    justify-content: space-around; }
+    .header-container-icons-search-img {
+      cursor: pointer;
+      width: 20px;
+      height: auto; }
+    .header-container-icons-account-img {
+      cursor: pointer;
+      width: 20px;
+      height: auto; }
+    .header-container-icons-market-img {
+      cursor: pointer;
+      width: 20px;
+      height: auto; }
+
+.body-container {
+  display: flex;
+  width: 70%;
+  height: 400px;
+  margin: 0 auto;
+  font-family: 'Ubunturegular';
+  margin-top: 110px; }
+  .body-container-product {
+    background-size: 400px auto;
+    background-image: url("../img/rond.svg"); }
+    .body-container-product-img {
+      width: 400px;
+      height: auto;
+      margin-top: 40px; }
+  .body-container-content {
+    margin-left: 100px; }
+    .body-container-content-section {
+      display: flex;
+      margin-top: 30px; }
+    .body-container-content-title {
+      margin-bottom: 60px;
+      font-family: "Ubuntulight";
+      font-size: 72px; }
+    .body-container-content-description {
+      font-size: 14px;
+      font-family: "Ubuntulight";
+      opacity: 0.8;
+      line-height: 20px; }
+    .body-container-content-price {
+      margin-top: 35px;
+      font-family: "Ubuntulight"; }
+      .body-container-content-price-text {
+        font-size: 13px;
+        opacity: 0.8; }
+      .body-container-content-price-doll {
+        margin-top: 5px;
+        font-size: 25px; }
+    .body-container-content-count {
+      height: 40px;
+      width: 140px;
+      font-family: "Ubuntulight";
+      display: flex;
+      justify-content: space-around;
+      margin-left: 180px;
+      margin-right: 40px;
+      border: 0.8px solid #dadada; }
+      .body-container-content-count-text {
+        font-size: 12px;
+        margin-left: 20px;
+        margin-top: 12px; }
+      .body-container-content-count-left {
+        margin-top: 10px;
+        font-family: "Ubuntulight";
+        height: 100%;
+        cursor: pointer;
+        width: auto; }
+        .body-container-content-count-left:hover {
+          transition: all 0.2s ease-out;
+          color: red; }
+      .body-container-content-count-more {
+        margin-top: 10px;
+        height: 100%;
+        cursor: pointer;
+        width: auto; }
+        .body-container-content-count-more:hover {
+          transition: all 0.2s ease-out;
+          color: red; }
+      .body-container-content-count-screen {
+        margin-top: 10px;
+        height: 100%;
+        width: auto; }
+      .body-container-content-count-add {
+        cursor: pointer;
+        font-family: "ubuntuMedium";
+        background-color: #ededed;
+        width: 120px; }
+        .body-container-content-count-add:hover {
+          background-color: black;
+          transition: all 0.2s ease-out;
+          color: white; }
+      .body-container-content-count-text {
+        font-size: 14px; }
+        .body-container-content-count-text:hover {
+          color: white; }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .modal_overlay {
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); }
+  .modal_content {
+    width: 300px;
+    margin: 20px auto;
+    background: #fff; }
