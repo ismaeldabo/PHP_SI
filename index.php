@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 
 <head>
@@ -13,14 +12,14 @@
   <header class="header-container">
     <div class="header-container-logo">
       <div class="header-container-logo-back">
-        <img class="header-container-logo-back-img" src="img/logo.png"></img>
+        <img class="header-container-logo-back-img" src="img/logo.png">
       </div>
     </div>
     <div class="header-container-icons">
       <div class="header-container-icons-search">
         <img src="img/search.png" alt="" class="header-container-icons-search-img">
       </div>
-      <div class="header-container-icons-account">
+      <div class="header-container-icons-account"><a href="php/signup.php"></a>
         <img src="img/account.png" alt="" class="header-container-icons-account-img">
       </div>
       <div class="header-container-icons-market">
@@ -73,22 +72,6 @@
     </div>
 
   </section>
-
-  <div class="modal">
-    <div class="modal_overlay"></div>
-    <div class="nav-login">
-      <form>
-        <input type="text" name="uid" placeholder="Username / e-mail" value="">
-        <input type="password" name="pwd" placeholder="password" value="">
-        <button type="submit" name="submit" placeholder="password" value="">Login</button>
-
-      </form>
-
-      
-
-
-    </div>
-  </div>
 <section>
   <div class="main-wrapper">
 
@@ -118,8 +101,8 @@
     });
 
     var btn = document.querySelector('.header-container-icons-account-img');
-    var modal = document.querySelector('.modal');
-    var overlay = document.querySelector('.modal_overlay');
+    var modal = document.querySelector('.main-container');
+    var overlay = document.querySelector('.main-container-overlay');
 
     btn.addEventListener('click', function() {
       modal.style.display = 'block';

@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'ubunturegular';
-  src: url(../font/Ubuntu-Regular.ttf); }
+  src: url("../font/Ubuntu-Regular.ttf"); }
 
 @font-face {
   font-family: 'ubuntulight';
-  src: url(../font/Ubuntu-Light.ttf); }
+  src: url("../font/Ubuntu-Light.ttf"); }
 
 @font-face {
   font-family: 'ubuntuMedium';
-  src: url(../font/Ubuntu-Medium.ttf); }
+  src: url("../font/Ubuntu-Medium.ttf"); }
 
 .header-container {
   height: 100px;
@@ -131,14 +131,14 @@
         .body-container-content-count-text:hover {
           color: white; }
 
-.modal {
+.main-container {
   display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
-  .modal_overlay {
+  .main-container-overlay {
     position: fixed;
     z-index: -1;
     top: 0;
@@ -146,7 +146,3 @@
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.2); }
-  .modal_content {
-    width: 300px;
-    margin: 20px auto;
-    background: #fff; }
