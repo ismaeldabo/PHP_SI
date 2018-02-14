@@ -15,6 +15,7 @@
 
 .main-wrapper {
   font-family: 'ubuntulight';
+  margin-top: 20px;
 }
 
 body {
@@ -29,17 +30,17 @@ body {
 .form {
   display: block;
 }
-
-p {
+.title {
   margin-left: 30px;
 }
+
 
 input {
   background-color: #ededed;
   display: block;
   padding: 13px 25px;
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: 20px;
   font-size: 12px;
   border: 1px solid #fff;
 }
@@ -50,7 +51,46 @@ input {
   cursor: pointer;
   transition: all 0.2s ease-out;
 }
-.top{
+
+.top {
   width: 60%;
   display: flex;
+}
+
+.tabs {
+  background-color: white;
+  width: 600px;
+  margin: 50px auto;
+  height: 300px;
+}
+
+.tabs nav {
+  display: flex;
+}
+
+.tabs nav a {
+  width: 100%;
+  height: 50px;
+  font-family: 'ubuntulight';
+  line-height: 50px;
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+
+.tabs nav a.is-active, .tabs nav a:hover {
+  background: black;
+  color: white;
+  transition: all 0.2s ease-out;
+}
+
+.tabs-content {
+  display: none;
+}
+
+.tabs-content.is-active {
+  display: block;
+}
+
+.tabs-content::first-letter {
+  font-size: 20px;
 }

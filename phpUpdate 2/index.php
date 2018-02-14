@@ -38,7 +38,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
     </div>
     <div class="header-container-icons">
       <div class="header-container-icons-search">
-        <img src="img/search.png" alt="" class="header-container-icons-search-img">
+        <img src="img/account.png" alt="" class="header-container-icons-search-img">
       </div>
       <a class="header-container-icons-account" href="add.php">
         <img src="img/more.png" alt="" class="header-container-icons-account-img">
