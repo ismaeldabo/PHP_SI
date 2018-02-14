@@ -11,8 +11,11 @@ $requete = "INSERT INTO TEST (title, description, price) VALUES (:title, :descri
 
 $stmt = $conn->prepare($requete);
 
-$stmt->bindParam(':title', $_POST['title']);
-$stmt->bindParam(':description', $_POST['description']);
-$stmt->bindParam(':price', $_POST['price']);
+$stmt->bindvalue(':title', $_POST['title']);
+$stmt->bindvalue(':description', $_POST['description']);
+$stmt->bindvalue(':price', $_POST['price']);
 
 $stmt->execute();
+
+
+
