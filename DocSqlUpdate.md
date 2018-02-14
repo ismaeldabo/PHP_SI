@@ -13,7 +13,7 @@ Nommez le 'Data' comme vous voulez Username : root connectez vous
 4. CREATE TABLE `Data`.`Article` (`id` INT UNSIGNED NOT NULL AUTO_INCREMENT, `title` VARCHAR(50) NOT NULL, `description` VARCHAR(720) NOT NULL, `price` VARCHAR(10) NOT NULL, PRIMARY KEY (`id`));
 5. USE DATA;
 6. SHOW DATABASES;
-7. USE ARTICLE;
+7. DESCRIBE ARTICLE;
 
 
 //INSERT INTO `Article` (`id`, `title`, `description`, `price`) VALUES (NULL, 'FITT360', 'Description goes here', 'xxx€');//
