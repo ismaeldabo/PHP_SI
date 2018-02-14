@@ -9,6 +9,26 @@
 </head>
 
 <body>
+<?php
+require_once "connect.php";
+$requete = "SELECT
+        `id`,
+        `title`,
+        `description`,
+        `price`
+  FROM
+    `Article`
+  WHERE
+    id = :id  
+;";
+$stmt = $conn->prepare($requete);
+
+
+$stmt->bindValue(":id", $_GET["id"]);
+$stmt->execute();
+$row=$stmt->fetch(PDO::FETCH_ASSOC);
+?>
+
   <header class="header-container">
     <div class="header-container-logo">
       <div class="header-container-logo-back">
@@ -38,11 +58,11 @@
     </div>
     <div class="body-container-content">
       <div class="body-container-content-title">
-        <p>FITT 360°</p>
+        <p><?=$row['title']?></p>
 
       </div>
       <div class="body-container-content-description">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+        <p><?=$row['description']?></p>
 
       </div>
       <div class="body-container-content-price">
@@ -50,9 +70,7 @@
           PRICE
 
         </div>
-        <div class="body-container-content-price-doll">
-          $ 314
-
+        <div class="body-container-content-price-doll"><?=$row['price']?>
         </div>
       </div>
       <section class="body-container-content-section">

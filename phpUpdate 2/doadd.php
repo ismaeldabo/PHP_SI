@@ -1,5 +1,4 @@
 <?php
-echo "Hello";
 if (!isset($_POST['title'])) {
     header('Location: index.php?nopostdata');
     exit;
@@ -16,3 +15,5 @@ $stmt->bindValue(':description', $_POST['description']);
 $stmt->bindValue(':price', $_POST['price']);
 
 $stmt->execute();
+
+header("location:index.php?id=".$conn->lastInsertId());
