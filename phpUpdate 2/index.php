@@ -70,7 +70,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
           PRICE
 
         </div>
-        <div class="body-container-content-price-doll"><?=$row['price']?>
+        <div class="body-container-content-price-doll"><?=$row['price']?>$
         </div>
       </div>
       <section class="body-container-content-section">
