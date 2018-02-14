@@ -15,7 +15,8 @@ $requete = "SELECT
         `id`,
         `title`,
         `description`,
-        `price`
+        `price`,
+        `image`
   FROM
     `Article`
   WHERE
@@ -52,7 +53,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
   </header>
   <section class="body-container">
     <div class="body-container-product">
-      <img src="img/collier.svg" alt="" class="body-container-product-img">
+      <img src="<?=$row['image']?>" alt="" class="body-container-product-img">
 
 
     </div>

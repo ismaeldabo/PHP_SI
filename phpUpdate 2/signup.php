@@ -7,12 +7,12 @@
             <input type="text" name="title" placeholder="title">
             <input type="text" name="description" placeholder="description">
             <input type="text" name="price" placeholder="price">
+            <input type="text" name="image" placeholder="Url">
             <input type="submit" name="submit">
         </form>
     </div>
 
     </div>
-
 
 
 </section>
