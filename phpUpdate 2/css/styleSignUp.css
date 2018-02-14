@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'ubunturegular';
+  src: url("../font/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'ubuntulight';
+  src: url("../font/Ubuntu-Light.ttf");
+}
+
+@font-face {
+  font-family: 'ubuntuMedium';
+  src: url("../font/Ubuntu-Medium.ttf");
+}
+
+.main-wrapper {
+  font-family: 'ubuntulight';
+}
+
+body {
+  background-image: url(../img/ligne.svg);
+  background-size: 100vw auto;
+}
+
+.addSign {
+  color: black;
+}
+
+.form {
+  display: block;
+}
+
+p {
+  margin-left: 30px;
+}
+
+input {
+  background-color: #ededed;
+  display: block;
+  padding: 13px 25px;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-size: 12px;
+  border: 1px solid #fff;
+}
+
+.Yes:hover {
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+.top{
+  width: 60%;
+  display: flex;
+}

@@ -10,6 +10,9 @@
   font-family: 'ubuntuMedium';
   src: url("../font/Ubuntu-Medium.ttf");
 }
+body{
+  background-image: url(../img/ligne.svg);
+}
 
 .header-container {
   height: 100px;
@@ -68,7 +71,7 @@
   height: 400px;
   margin: 0 auto;
   font-family: 'Ubunturegular';
-  margin-top: 110px;
+  margin-top: 100px;
 
   &-product {
     background-size: 400px auto;
@@ -122,6 +125,7 @@
       width: 140px;
       font-family: "Ubuntulight";
       display: flex;
+      background-color: white;
       justify-content: space-around;
       margin-left: 180px;
       margin-right: 40px;

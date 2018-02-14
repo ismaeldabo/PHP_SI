@@ -20,7 +20,7 @@ $requete = "SELECT
   FROM
     `Article`
   WHERE
-    id = :id  
+    id = :id
 ;";
 $stmt = $conn->prepare($requete);
 
@@ -40,8 +40,8 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
       <div class="header-container-icons-search">
         <img src="img/search.png" alt="" class="header-container-icons-search-img">
       </div>
-      <a class="header-container-icons-account" href="signup.php">
-        <img src="img/account.png" alt="" class="header-container-icons-account-img">
+      <a class="header-container-icons-account" href="add.php">
+        <img src="img/more.png" alt="" class="header-container-icons-account-img">
       </a>
       <div class="header-container-icons-market">
         <img src="img/market.png" alt="" class="header-container-icons-market-img">

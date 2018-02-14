@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'ubunturegular';
+  src: url("../font/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'ubuntulight';
+  src: url("../font/Ubuntu-Light.ttf");
+}
+
+@font-face {
+  font-family: 'ubuntuMedium';
+  src: url("../font/Ubuntu-Medium.ttf");
+}
+body{
+  background-image: url(../img/ligne.svg);
+    background-size: 100vw auto;
+}
+
+.addProject {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+
+  margin-left: -200px;
+  margin-top: -100px;
+
+  font-size: 400%;
+  font-family: 'Ubuntulight';
+  display: inline-block;
+}
+
+input {
+  display: block;
+  max-width: 200px;
+  padding: 13px 25px;
+  margin: 80px auto 0;
+
+  font-size: 12px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+
+  border: 1px solid #fff;
+  background: #000;
+}
+input:hover{
+  color: black;
+  background-color: #ededed;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
