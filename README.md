@@ -23,4 +23,4 @@
 
 #### Site Map
 
-![](https://github.com/ismaeldabo/PHP_SI/blob/master/phpUpdate%202/img/sitemap.png)
+![](https://github.com/ismaeldabo/PHP_SI/blob/master/phpUpdate%202/img/Sitemap.png)
