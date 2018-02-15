@@ -17,8 +17,10 @@
 	<li> connect.php  est la page permettant à la personne de s'identifier.</li>
 	<li> doadd.php est le fichier fait pour ajouter des données à la base de données. </li>
 	<li> dodelete.php est le fichier fait pour supprimer des données. </li>
+	<li> add.php </li>
+	<li> delete.php </li>
 	<li> modal.php </li> 
 
 </ul>
 
-
+![](https://github.com/ismaeldabo/PHP_SI/blob/master/phpUpdate%202/img/sitemap.png)
