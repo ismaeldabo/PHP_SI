@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+FUTURE.
 
-You can use the [editor on GitHub](https://github.com/ismaeldabo/PHP_SI/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Future est un site de vente en ligne mettant en avant des objets futuristes. Pour ce projet, nous avons utilisés les logiciels suivants: 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+	* PHP 7.1
+	* Apache 2.4
+  * MySQL 5.7.21
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Fonction de chaque pages:
 
-```markdown
-Syntax highlighted code block
+	* home.php   est notre page principale, elle est consultée que par des administrateurs. Elle permet d'ajouter un nouveau projet renvoyant     à l'action "add.php" 
+	* connect.php  est la page permettant à la personne de s'identifier.
+	* doadd.php est le fichier fait pour ajouter des données à la base de données.
+	* dodelete.php est le fichier fait pour supprimer des données.
+	* modal.php 
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ismaeldabo/PHP_SI/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
