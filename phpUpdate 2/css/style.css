@@ -170,7 +170,22 @@ body {
 }
 
 .modal_content {
+  display: flex;
   width: 300px;
-  margin: 20px auto;
-  background: #fff;
+  height: 300px;
+  background-color: #fff;
+  margin: 70px auto;
+}
+
+.btn{
+  background-color: #ededed;
+}
+
+.coucou{
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.Yes{
+  height: 50px;
+  width: 80px;
 }

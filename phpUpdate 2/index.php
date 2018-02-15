@@ -17,7 +17,7 @@ $requete = "SELECT
         `description`,
         `price`,
         `image`
-  FROM  
+  FROM
     `Article`
   WHERE
     id = :id
@@ -39,7 +39,10 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
 
       <div class="header-container-icons">
 
-          <button class="btn">settings</button>
+        <div class="body-container-content-count-add">
+          <p class="body-container-content-count-text">SETTINGS</p>
+
+        </div>
 
       </div>
   </header>
@@ -86,6 +89,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
 <div class="modal">
     <div class="modal_overlay"></div>
     <div class="modal_content">
+      <div class="coucou">
         <form class="header-container-icons-account" action="page/page1/page1.php">
             <input type="hidden" value=" <?=$row['id'] ?>" placeholder="Project you want to edit">
             <input type="submit" name="submit" value="ADD" class="Yes">
@@ -96,14 +100,15 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
         </form>
         <form class="header-container-icons-account" action="dodelete.php" method="post">
             <input type="hidden" name="id" value="<?=$_GET["id"]?>">
-            <input type="submit" name="submit" value="delete" class="Yes">
+            <input type="submit" name="submit" value="DELETE" class="Yes">
         </form>
+        </div>
 
     </div>
 </div>
 
 <script>
-    var btn = document.querySelector('button');
+    var btn = document.querySelector('.body-container-content-count-add');
     var modal = document.querySelector('.modal');
     var overlay = document.querySelector('.modal_overlay');
 
@@ -121,4 +126,3 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
 </body>
 
 </html>
-
