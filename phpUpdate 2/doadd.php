@@ -28,6 +28,6 @@ $stmt->bindValue(':image', $_POST['image']);
 
 $stmt->execute();
 
-// redirection à l'index 'lastInsertId()'= Insere le dernier ID du tableau
+// redirection à l'index 'lastInsertId()'= Insert le dernier ID du tableau
 
 header("location:index.php?id=".$conn->lastInsertId());
