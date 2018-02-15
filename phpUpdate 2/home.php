@@ -11,7 +11,7 @@
 <body>
 
   <h1 class="addProject">Add a new project
-    <form action="add.php" class="addBtn">
+    <form action="page/page1/page1.php" class="addBtn">
         <input type="submit" name="submit" href="#">
     </form>
   </h1>

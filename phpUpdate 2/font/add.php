@@ -3,27 +3,9 @@
   <link rel="stylesheet" href="css/styleSignUp.css">
   <link rel="stylesheet" href="css/reset.css">
 </header>
-<body>
+
 <?php
-require "connect.php";
-$requete = "SELECT
-        `id`,
-        `title`,
-        `description`,
-        `price`,
-        `image`
-  FROM
-    `Article`
-  WHERE
-    id = :id
-;";
-$stmt = $conn->prepare($requete);
-
-
-$stmt->bindValue(":id", $_GET["id"]);
-$stmt->execute();
-$row=$stmt->fetch(PDO::FETCH_ASSOC);
-?>
+ ?>
 
 <div class="tabs">
 
@@ -48,7 +30,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
                       <input type="text" name="image" placeholder="Url / Image">
                     </div>
 
-                    <input type="submit" name="submit" class="Yes">
+                    <input type="submit" name="submit" value="OK" class="Yes">
                 </form>
             </div></article>
             <article id="page2" class="tabs-content"><div class="main-wrapper">
@@ -63,18 +45,11 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
                       <input type="text" name="image" placeholder="Url / Image">
                     </div>
 
-                    <input type="submit" name="submit" class="Yes">
+                    <input type="submit" name="submit" value="OK" class="Yes">
                 </form>
             </div></article>
-            <article id="page3" class="tabs-content">
+            <article id="page3" class="tabs-content"></article>
 
-                <form action="dodelete.php" method="post">
-                    <input type="hidden" name="id" value="<?=$row['id']?>">
-                    <label for="">Êtes vous sûr de vouloir supprimer ? <?=$row['nom']?></label><br>
-                    <input type="submit" value="oui">
-                </form>
-
-            </article>
 
         </div>
     </div>
@@ -109,5 +84,3 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
     </script>
 </body>
 </html>
-
-

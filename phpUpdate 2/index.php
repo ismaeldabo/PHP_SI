@@ -40,9 +40,11 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
       <div class="header-container-icons-search">
         <img src="img/account.png" alt="" class="header-container-icons-search-img">
       </div>
-      <a class="header-container-icons-account" href="add.php">
+      <form class="header-container-icons-account" action="page/page1/page1.php">
+          <input type="text" value=" <?=$row['id'] ?> ">
+          <input type="submit" name="submit" value="OK" class="Yes">
         <img src="img/more.png" alt="" class="header-container-icons-account-img">
-      </a>
+      </form>
       <div class="header-container-icons-market">
         <img src="img/market.png" alt="" class="header-container-icons-market-img">
       </div>
@@ -97,6 +99,7 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
 
   </div>
 </section>
+
 
   <script>
     var counter = 0;
