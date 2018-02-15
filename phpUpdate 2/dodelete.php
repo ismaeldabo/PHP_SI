@@ -15,6 +15,8 @@ $stmt = $conn->prepare($requete);
 $stmt->bindValue(':id', $_POST['id']);
 $stmt->execute();
 
+
+
 // Redirection Home
 header('Location: ../home.php');
 

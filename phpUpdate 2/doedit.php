@@ -18,3 +18,4 @@ $stmt->bindValue(':price', $_POST['price']);
 $stmt->bindValue(':image', $_POST['image']);
 $stmt->execute();
 header('Location: ../index.php?id='.$conn->lastInsertId());
+

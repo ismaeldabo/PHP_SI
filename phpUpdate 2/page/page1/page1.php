@@ -14,21 +14,6 @@
 
 <div class="tabs">
 
-        <nav>
-            <form class="header-container-icons-account" action="../page1/page1.php">
-                <input type="hidden" value=" <?=$row['id'] ?> ">
-                <input type="submit" name="submit" value="ADD" class="Yes">
-            </form>
-            <form class="header-container-icons-account" action="../page2/page2.php">
-                <input type="hidden" value=" <?=$row['id'] ?> ">
-                <input type="submit" name="submit" value="EDIT" class="Yes">
-            </form>
-            <form class="header-container-icons-account" action="../page3/page3.php">
-                <input type="hidden" value=" <?=$row['id'] ?>" placeholder="Project you want to delete">
-                <input type="submit" name="submit" value="REMOVE" class="Yes">
-            </form>
-        </nav>
-
         <div class="tabs-contents">
 
             <article id="page1" class="tabs-content is-active">

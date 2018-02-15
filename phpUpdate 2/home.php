@@ -10,8 +10,8 @@
 </head>
 <body>
 
-  <h1 class="addProject">Add a new project
-    <form action="page/page1/page1.php" class="addBtn">
+  <h1 class="addProject">Home in Future.
+    <form action="index.php?id=1" class="addBtn">
         <input type="submit" name="submit" href="#">
     </form>
   </h1>

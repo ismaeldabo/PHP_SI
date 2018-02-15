@@ -17,7 +17,7 @@ $requete = "SELECT
         `description`,
         `price`,
         `image`
-  FROM
+  FROM  
     `Article`
   WHERE
     id = :id
@@ -31,27 +31,17 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
 ?>
 
   <header class="header-container">
-    <div class="header-container-logo">
-      <div class="header-container-logo-back">
-        <img class="header-container-logo-back-img" src="img/logo.png">
-      </div>
-    </div>
-    <div class="header-container-icons">
-      <div class="header-container-icons-search">
-        <img src="img/account.png" alt="" class="header-container-icons-search-img">
-      </div>
-      <form class="header-container-icons-account" action="page/page1/page1.php">
-          <input type="text" value=" <?=$row['id'] ?> ">
-          <input type="submit" name="submit" value="OK" class="Yes">
-        <img src="img/more.png" alt="" class="header-container-icons-account-img">
-      </form>
-      <div class="header-container-icons-market">
-        <img src="img/market.png" alt="" class="header-container-icons-market-img">
+      <div class="header-container-logo">
+          <div class="header-container-logo-back">
+              <img class="header-container-logo-back-img" src="img/logo.png">
+          </div>
       </div>
 
-    </div>
+      <div class="header-container-icons">
 
+          <button class="btn">settings</button>
 
+      </div>
   </header>
   <section class="body-container">
     <div class="body-container-product">
@@ -93,49 +83,42 @@ $row=$stmt->fetch(PDO::FETCH_ASSOC);
     </div>
 
   </section>
-<section>
-  <div class="main-wrapper">
+<div class="modal">
+    <div class="modal_overlay"></div>
+    <div class="modal_content">
+        <form class="header-container-icons-account" action="page/page1/page1.php">
+            <input type="hidden" value=" <?=$row['id'] ?>" placeholder="Project you want to edit">
+            <input type="submit" name="submit" value="ADD" class="Yes">
+        </form>
+        <form class="header-container-icons-account" action="page/page2/page2.php">
+            <input type="hidden" value=" <?=$row['id'] ?> ">
+            <input type="submit" name="submit" value="EDIT" class="Yes">
+        </form>
+        <form class="header-container-icons-account" action="dodelete.php" method="post">
+            <input type="hidden" name="id" value="<?=$_GET["id"]?>">
+            <input type="submit" name="submit" value="delete" class="Yes">
+        </form>
 
+    </div>
+</div>
 
-  </div>
-</section>
-
-
-  <script>
-    var counter = 0;
-
-    var screen = document.querySelector('.body-container-content-count-screen');
-    var plus = document.querySelector('.body-container-content-count-more');
-    var minus = document.querySelector('.body-container-content-count-left');
-
-    plus.addEventListener('click', function() {
-
-      counter = counter + 1;
-      screen.textContent = counter;
-
-    });
-
-    minus.addEventListener('click', function() {
-      if (counter > 1) {
-        counter = counter - 1;
-        screen.textContent = counter;
-      }
-    });
-
-    var btn = document.querySelector('.header-container-icons-account-img');
-    var modal = document.querySelector('.main-container');
-    var overlay = document.querySelector('.main-container-overlay');
+<script>
+    var btn = document.querySelector('button');
+    var modal = document.querySelector('.modal');
+    var overlay = document.querySelector('.modal_overlay');
 
     btn.addEventListener('click', function() {
-      modal.style.display = 'block';
+        modal.style.display = 'block';
     });
 
     overlay.addEventListener('click', function() {
-      modal.style.display = '';
+        modal.style.display = '';
     });
-  </script>
+
+</script>
 
 
 </body>
 
 </html>
+
