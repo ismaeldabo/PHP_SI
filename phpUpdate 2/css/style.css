@@ -189,3 +189,19 @@ body {
   height: 50px;
   width: 80px;
 }
+
+.link{
+  position: absolute;
+  padding: 20px;
+  background-color: #ededed;
+  color: black;
+  font-family: "ubuntulight";
+  top: 50%;
+  left: 45%;
+}
+
+.link:hover{
+  color: white;
+  transition: all 0.2s ease-out;
+  background-color: black;
+}
